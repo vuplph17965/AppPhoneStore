@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/layout/fragment__dien_thoai.xml" value="0.2246376811594203" />
+        <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/layout/fragment_dienthoai_activity.xml" value="0.2246376811594203" />
+        <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/layout/fragment_gioithieu_activity.xml" value="0.2246376811594203" />
+        <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/layout/fragment_hangdienthoai_activity.xml" value="0.2246376811594203" />
+        <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/layout/fragment_hoadon_activity.xml" value="0.2246376811594203" />
+        <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/layout/fragment_hoadonchitiet_activity.xml" value="0.2246376811594203" />
+        <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/layout/fragment_loaidienthoai_activity.xml" value="0.2246376811594203" />
+        <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/layout/fragment_taikhoan_activity.xml" value="0.2246376811594203" />
+        <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/menu/drawer_view.xml" value="0.2296875" />
+        <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/menu/nav_header.xml" value="0.2296875" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

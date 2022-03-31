@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:title="Home">
+            <menu>
+                <item
+                    android:id="@+id/nav_DienThoai"
+                    android:icon="@drawable/ic_launcher_background"
+                    android:title="Điện Thoại" />
+                <item
+                    android:id="@+id/nav_TaiKhoan"
+                    android:icon="@drawable/ic_launcher_background"
+                    android:title="Tài Khoản"/>
+                <item
+                    android:id="@+id/nav_ThongKe"
+                    android:icon="@drawable/ic_launcher_background"
+                    android:title="Thống Kê"/>
+                <item
+                    android:id="@+id/nav_HoaDon"
+                    android:icon="@drawable/ic_launcher_background"
+                    android:title="Hóa Đơn"/>
+                <item
+                    android:id="@+id/nav_HangDT"
+                    android:icon="@drawable/ic_launcher_background"
+                    android:title="Hãng điện thoại"/>
+            </menu>
+        </item>
+
+        <item android:title="Giới Thiệu">
+            <menu>
+                <item
+                    android:id="@+id/nav_GioiThieu"
+                    android:icon="@drawable/ic_launcher_background"
+                    android:title="Giới Thiệu"/>
+                <item
+                    android:id="@+id/nav_DangXuat"
+                    android:icon="@drawable/ic_launcher_background"
+                    android:title="Đăng Xuất"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>
