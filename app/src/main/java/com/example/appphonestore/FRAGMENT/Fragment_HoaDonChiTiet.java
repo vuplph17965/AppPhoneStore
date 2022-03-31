@@ -1,4 +1,4 @@
-package com.example.appphonestore.Fragment;
+package com.example.appphonestore.FRAGMENT;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,11 +9,11 @@ import androidx.fragment.app.Fragment;
 
 import com.example.appphonestore.R;
 
-public class Fragment_GioiThieu extends Fragment {
+public class Fragment_HoaDonChiTiet extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_gioithieu_activity, container, false);
+        View v = inflater.inflate(R.layout.fragment_hoadonchitiet_activity, container, false);
 
         return v;
     }
