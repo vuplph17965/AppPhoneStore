@@ -5,19 +5,19 @@
             <menu>
                 <item
                     android:id="@+id/nav_DienThoai"
-                    android:icon="@drawable/ic_launcher_background"
+                    android:icon="@drawable/ic_phone"
                     android:title="Điện Thoại" />
                 <item
                     android:id="@+id/nav_TaiKhoan"
-                    android:icon="@drawable/ic_launcher_background"
+                    android:icon="@drawable/ic_account"
                     android:title="Tài Khoản"/>
                 <item
                     android:id="@+id/nav_ThongKe"
-                    android:icon="@drawable/ic_launcher_background"
+                    android:icon="@drawable/ic_thongke"
                     android:title="Thống Kê"/>
                 <item
                     android:id="@+id/nav_HoaDon"
-                    android:icon="@drawable/ic_launcher_background"
+                    android:icon="@drawable/ic_hoadon"
                     android:title="Hóa Đơn"/>
                 <item
                     android:id="@+id/nav_HangDT"
@@ -34,7 +34,7 @@
                     android:title="Giới Thiệu"/>
                 <item
                     android:id="@+id/nav_DangXuat"
-                    android:icon="@drawable/ic_launcher_background"
+                    android:icon="@drawable/ic_dangxuat"
                     android:title="Đăng Xuất"/>
             </menu>
         </item>
