@@ -35,16 +35,16 @@ public class DatabaseHeper extends SQLiteOpenHelper {
                 "create table DienThoai (" +
                         "maDT INTEGER PRIMARY KEY AUTOINCREMENT, " +
                         "tenDT TEXT NOT NULL, " +
-                        "gia FLOAT NOT NULL, " +
+                        "gia INTEGER NOT NULL, " +
                         "soLuong INT NOT NULL, " +
-                        "ngayNhap DATE NOT NULL, " +
+                        "ngayNhap TEXT NOT NULL, " +
                         "NoiSx TEXT NOT NULL, " +
                         "maLoai INTEGER REFERENCES LoaiDt(maLoai))";
         db.execSQL(tb_DienThoai);
         String tb_hd =
                 "create table HoaDon (" +
                         "maHoaDon INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                        "ngaymua DATE NOT NULL)";
+                        "ngaymua TEXT NOT NULL)";
         db.execSQL(tb_hd);
 
 
@@ -58,7 +58,18 @@ public class DatabaseHeper extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+    public void onUpgrade(SQLiteDatabase db, int i, int i1) {
+        String dropTablenv = "drop table if exists NhanVien";
+        db.execSQL(dropTablenv);
+        String dropTableLoaiDt = "drop table if exists LoaiDT";
+        db.execSQL(dropTableLoaiDt);
+        String dropTableDienThoai = "drop table if exists DienThoai";
+        db.execSQL(dropTableDienThoai);
+        String dropTablehoadon = "drop table if exists HoaDon";
+        db.execSQL(dropTablehoadon);
+        String dropTablehoadonchi  = "drop table if exists HoaDonChiTiet";
+        db.execSQL(dropTablehoadonchi);
 
+        onCreate(db);
     }
 }
