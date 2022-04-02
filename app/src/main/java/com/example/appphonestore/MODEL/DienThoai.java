@@ -68,37 +68,9 @@ public class DienThoai {
         this.noiSX = noiSX;
     }
 
-    public static String getTbName() {
-        return TB_NAME;
-    }
 
-    public static String getColNameMas() {
-        return COL_NAME_MAS;
-    }
 
-    public static String getCOL_NAME_TenS() {
-        return COL_NAME_TenS;
-    }
 
-    public static String getColNameGias() {
-        return COL_NAME_GIAS;
-    }
-
-    public static String getCOL_NAME_SOLUONGs() {
-        return COL_NAME_SOLUONGs;
-    }
-
-    public static String getColNameNgaynhap() {
-        return COL_NAME_NGAYNHAP;
-    }
-
-    public static String getColNameNoisx() {
-        return COL_NAME_NOISX;
-    }
-
-    public static String getColNameMals() {
-        return COL_NAME_MALS;
-    }
 
     public static final String TB_NAME = "DienThoai";
     public static final String COL_NAME_MAS = "maDT";
