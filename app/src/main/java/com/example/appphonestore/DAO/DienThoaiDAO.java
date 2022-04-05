@@ -2,27 +2,51 @@ package com.example.appphonestore.DAO;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.appphonestore.DATABASE.DatabaseHeper;
 import com.example.appphonestore.MODEL.DienThoai;
 
-public class DienThoaiDAO {
+import java.util.ArrayList;
+import java.util.List;
 
-    SQLiteDatabase database;
+public class DienThoaiDAO {
+    SQLiteDatabase sqLiteDatabase;
+    DatabaseHeper createData;
 
     public DienThoaiDAO(Context context) {
-        DatabaseHeper databaseHeper = new DatabaseHeper(context);
-        database = databaseHeper.getWritableDatabase();
+        createData = new DatabaseHeper(context);
+        sqLiteDatabase = createData.getWritableDatabase();
     }
 
-    public long Add(DienThoai dienThoai) {
+    public long ADDS(DienThoai dt) {
         ContentValues values = new ContentValues();
-        values.put(DienThoai.COL_NAME_MAS, dienThoai.getMaDT());
-        values.put(DienThoai.COL_NAME_TenS, dienThoai.getTenDT());
-        values.put(DienThoai.COL_NAME_GIAS, dienThoai.getGiaDT());
-        values.put(DienThoai.COL_NAME_SOLUONGs, dienThoai.getSl());
-        values.put(DienThoai.COL_NAME_NGAYNHAP, dienThoai.getNgaynhap());
-        values.put(DienThoai.);
+        values.put(DienThoai.COL_NAME_MALS, dt.getMas());
+        values.put(DienThoai.COL_NAME_TenS, dt.getTens());
+        values.put(DienThoai.COL_NAME_GIAS, dt.getGias());
+        values.put(DienThoai.COL_NAME_SOLUONGs, dt.getSl());
+        values.put(DienThoai.COL_NAME_NGAYNHAP, dt.getNgaynhap());
+        values.put(DienThoai.COL_NAME_NOISX, dt.getNoiSX());
+        return sqLiteDatabase.insert(DienThoai.TB_NAME, null, values);
     }
+
+    public int DELETES(DienThoai dt) {
+        return sqLiteDatabase.delete(DienThoai.TB_NAME, "maDT=?", new String[]{String.valueOf(dt.getMas())});
+    }
+
+    public int UPDATES(DienThoai dt) {
+        ContentValues values = new ContentValues();
+        values.put(DienThoai.COL_NAME_MALS, dt.getMas());
+        values.put(DienThoai.COL_NAME_TenS, dt.getTens());
+        values.put(DienThoai.COL_NAME_GIAS, dt.getGias());
+        values.put(DienThoai.COL_NAME_SOLUONGs, dt.getSl());
+        values.put(DienThoai.COL_NAME_NGAYNHAP, dt.getNgaynhap());
+        values.put(DienThoai.COL_NAME_NOISX, dt.getNoiSX());
+        return sqLiteDatabase.update(DienThoai.TB_NAME, values, "maDT=?", new String[]{String.valueOf(dt.getMas())});
+    }
+
+
+
+
 }
