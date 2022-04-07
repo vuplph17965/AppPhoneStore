@@ -27,7 +27,6 @@ public class DatabaseHeper extends SQLiteOpenHelper {
         String tb_l =
                 "create table LoaiDt (" +
                         "maLoai INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                        "Mota TEXT NOT NULL, " +
                         "tenLoai TEXT UNIQUE NOT NULL)";
         db.execSQL(tb_l);
 

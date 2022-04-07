@@ -8,6 +8,7 @@
         <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/drawable-v24/ic_baseline_person_24.xml" value="0.24583333333333332" />
         <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/drawable/ic_account.xml" value="0.24583333333333332" />
         <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.24583333333333332" />
+        <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.24583333333333332" />
         <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/drawable/ic_hoadon.xml" value="0.24583333333333332" />
         <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/drawable/ic_launcher_background.xml" value="0.24583333333333332" />
         <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/drawable/ic_menu.xml" value="0.24583333333333332" />
@@ -18,6 +19,7 @@
         <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/layout/custom_add_dienthoai.xml" value="0.264" />
         <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/layout/custom_add_nguoidung.xml" value="0.2028985507246377" />
         <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/layout/custom_add_theloai.xml" value="0.2028985507246377" />
+        <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/layout/custom_list_theloai.xml" value="0.4" />
         <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/layout/fragment__dien_thoai.xml" value="0.2246376811594203" />
         <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/layout/fragment_dienthoai_activity.xml" value="0.2246376811594203" />
         <entry key="..\:/1. Vuplph17965/Du_An_1/PhoneStore/app/src/main/res/layout/fragment_gioithieu_activity.xml" value="0.2246376811594203" />
