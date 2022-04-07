@@ -46,7 +46,27 @@ public class DienThoaiDAO {
         return sqLiteDatabase.update(DienThoai.TB_NAME, values, "maDT=?", new String[]{String.valueOf(dt.getMas())});
     }
 
+    public List<DienThoai> GETS() {
+        String dl = "SELECT * FROM DienThoai";
+        List<DienThoai> list = getdata(dl);
+        return list;
+    }
 
+    public DienThoai getId(String id) {
+        String sql = "SELECT * FROM DienThoai WHERE maDT=?";
+        List<DienThoai> list = getdata(sql, id);
+        return list.get(0);
+    }
 
+    private List<DienThoai> getdata(String dl, String... Arays /* có hoặc không nhiều phần tử*/) {
+        List<DienThoai> list = new ArrayList<>();
+        Cursor cursor = sqLiteDatabase.rawQuery(dl, Arays);
+        while (cursor.moveToNext()) {
+            DienThoai dt = new DienThoai();
+            //dt.setMas(Integer.parseInt(cursor.getString(cursor.getColumnIndex(DienThoai.COL_NAME_MAS))));
 
+            list.add(dt);
+        }
+        return list;
+    }
 }
