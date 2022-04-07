@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/ed_tenDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Tên điện thoại"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ed_giaDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Giá"
+        app:layout_constraintStart_toStartOf="@+id/ed_tenDT"
+        app:layout_constraintTop_toBottomOf="@+id/ed_tenDT" />
+
+    <EditText
+        android:id="@+id/ed_soluong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Số lượng"
+        app:layout_constraintStart_toStartOf="@+id/ed_giaDT"
+        app:layout_constraintTop_toBottomOf="@+id/ed_giaDT" />
+
+    <EditText
+        android:id="@+id/ed_ngaynhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:text="Ngày nhập"
+        app:layout_constraintStart_toStartOf="@+id/ed_soluong"
+        app:layout_constraintTop_toBottomOf="@+id/ed_soluong" />
+
+    <EditText
+        android:id="@+id/ed_noiSX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nơi sản xuât"
+        app:layout_constraintStart_toStartOf="@+id/ed_ngaynhap"
+        app:layout_constraintTop_toBottomOf="@+id/ed_ngaynhap" />
+
+    <Spinner
+        android:id="@+id/spn_loai"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_loai"
+        app:layout_constraintTop_toBottomOf="@+id/tv_loai" />
+
+    <TextView
+        android:id="@+id/tv_loai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Hãng điện thoại"
+        app:layout_constraintStart_toStartOf="@+id/ed_noiSX"
+        app:layout_constraintTop_toBottomOf="@+id/ed_noiSX" />
+</androidx.constraintlayout.widget.ConstraintLayout>
