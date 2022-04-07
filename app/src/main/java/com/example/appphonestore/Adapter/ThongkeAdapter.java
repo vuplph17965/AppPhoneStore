@@ -1,4 +1,4 @@
-package com.example.appphonestore.Adapter;
+package com.example.appphonestore.ADAPTER;
 
 public class ThongkeAdapter {
 

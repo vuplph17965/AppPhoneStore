@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/ed_emailNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="98dp" />
+
+    <EditText
+        android:id="@+id/ed_tenNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Họ Tên"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/ed_emailNV"
+        app:layout_constraintTop_toBottomOf="@+id/ed_emailNV" />
+
+    <EditText
+        android:id="@+id/ed_sdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Số điện thoại"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/ed_tenNV"
+        app:layout_constraintTop_toBottomOf="@+id/ed_tenNV" />
+
+    <Button
+        android:id="@+id/btn_luuNV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Save"
+        app:layout_constraintStart_toStartOf="@+id/ed_passNV"
+        app:layout_constraintTop_toBottomOf="@+id/ed_passNV" />
+
+    <Button
+        android:id="@+id/btnHuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Hủy"
+        app:layout_constraintEnd_toEndOf="@+id/ed_passNV"
+        app:layout_constraintTop_toBottomOf="@+id/ed_passNV" />
+
+    <EditText
+        android:id="@+id/ed_passNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/ed_sdt"
+        app:layout_constraintTop_toBottomOf="@+id/ed_sdt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

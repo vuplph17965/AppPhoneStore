@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="20dp">
 
 
     <EditText
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Tên điện thoại"
+        android:hint="Tên điện thoại"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,7 +24,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        android:text="Giá"
+        android:hint="Giá"
         app:layout_constraintStart_toStartOf="@+id/ed_tenDT"
         app:layout_constraintTop_toBottomOf="@+id/ed_tenDT" />
 
@@ -33,7 +34,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        android:text="Số lượng"
+        android:hint="Số lượng"
         app:layout_constraintStart_toStartOf="@+id/ed_giaDT"
         app:layout_constraintTop_toBottomOf="@+id/ed_giaDT" />
 
@@ -43,7 +44,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="date"
-        android:text="Ngày nhập"
+        android:hint="Ngày nhập"
         app:layout_constraintStart_toStartOf="@+id/ed_soluong"
         app:layout_constraintTop_toBottomOf="@+id/ed_soluong" />
 
@@ -53,14 +54,15 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Nơi sản xuât"
+        android:hint="Nơi sản xuât"
         app:layout_constraintStart_toStartOf="@+id/ed_ngaynhap"
         app:layout_constraintTop_toBottomOf="@+id/ed_ngaynhap" />
 
     <Spinner
         android:id="@+id/spn_loai"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="@+id/tv_loai"
         app:layout_constraintTop_toBottomOf="@+id/tv_loai" />
 
@@ -72,4 +74,24 @@
         android:text="Hãng điện thoại"
         app:layout_constraintStart_toStartOf="@+id/ed_noiSX"
         app:layout_constraintTop_toBottomOf="@+id/ed_noiSX" />
+
+    <Button
+        android:id="@+id/btn_luuDT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Save"
+        app:layout_constraintStart_toStartOf="@+id/spn_loai"
+        app:layout_constraintTop_toBottomOf="@+id/spn_loai" />
+
+    <Button
+        android:id="@+id/btnHuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Hủy"
+        app:layout_constraintEnd_toEndOf="@+id/spn_loai"
+        app:layout_constraintTop_toBottomOf="@+id/spn_loai" />
 </androidx.constraintlayout.widget.ConstraintLayout>
