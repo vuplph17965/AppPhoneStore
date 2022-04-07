@@ -3,18 +3,28 @@ package com.example.appphonestore.MODEL;
 public class DienThoai {
     int mas;
     String tens;
+    int mal;
     int gias;
     int sl;
     String ngaynhap;
     String noiSX;
 
-    public DienThoai(int mas, String tens, int gias, int sl, String ngaynhap, String noiSX) {
+    public DienThoai(int mas, String tens, int mal, int gias, int sl, String ngaynhap, String noiSX) {
         this.mas = mas;
         this.tens = tens;
+        this.mal = mal;
         this.gias = gias;
         this.sl = sl;
         this.ngaynhap = ngaynhap;
         this.noiSX = noiSX;
+    }
+
+    public int getMal() {
+        return mal;
+    }
+
+    public void setMal(int mal) {
+        this.mal = mal;
     }
 
     public DienThoai() {
