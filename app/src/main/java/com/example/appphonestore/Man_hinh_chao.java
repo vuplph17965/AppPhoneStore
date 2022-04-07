@@ -15,8 +15,8 @@ public class Man_hinh_chao extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
-        },3500);
+        },3000);
     }
 }
